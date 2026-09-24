@@ -1,0 +1,3 @@
+fair-esm>=2.0
+iFeatureOmegaCLI>=1.0
+python-Levenshtein>=0.21
