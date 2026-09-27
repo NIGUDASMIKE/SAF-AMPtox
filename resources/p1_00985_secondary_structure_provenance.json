@@ -1,0 +1,34 @@
+{
+  "candidate": "P1_00985",
+  "sequence": "GFGSIFRKAVHRLAHRL",
+  "method": "MDTraj compute_dssp",
+  "method_call": "md.compute_dssp(traj, simplified=True)",
+  "assignment_states": "H/E/C",
+  "helix_fraction_definition": "fraction of peptide residues assigned H at each frame",
+  "selection": "protein",
+  "trajectory_preprocessing": [
+    "whole molecules",
+    "nojump",
+    "membrane-centered trajectory"
+  ],
+  "software": {
+    "python": "3.10.12",
+    "mdtraj": "1.10.3",
+    "MDAnalysis": "2.9.0",
+    "gromacs": "2023.2"
+  },
+  "not_used": [
+    "mkdssp",
+    "dssp binary",
+    "gmx do_dssp"
+  ],
+  "expected_recovered_values": {
+    "n_frames": 2001,
+    "time_start_ns": 0.0,
+    "time_end_ns": 100.0,
+    "n_residues": 17,
+    "initial_helix_fraction": 0.8235294117647058,
+    "mean_80_100ns_helix_fraction": 0.7290597036819715,
+    "final_helix_fraction": 0.7647058823529411
+  }
+}
